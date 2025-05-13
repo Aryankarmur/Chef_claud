@@ -11,8 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-
-Chef Claude/Chef_claud/src/components/Apikey.jsx
+    src/components/Apikey.jsx
 
 # Editor directories and files
 .vscode/*
