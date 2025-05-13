@@ -5,6 +5,7 @@ import ClaudeRecipe from "./ClaudeRecipe";
 import IngredientList from "./IngredientList";
 import { useRef } from "react";
 import { useEffect } from "react";
+import Apikey from "./Apikey";
 
 const Main = () => {
   const [ingredients, setIngredients] = useState([]);
@@ -32,7 +33,7 @@ const Main = () => {
 
   const handleRecipe = async () => {
     const inputRecipe = ingredients.join(", ");
-    const hf = new HfInference("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");
+    const hf = new HfInference(Apikey());
     try {
       const response = await hf.chatCompletion({
         model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
