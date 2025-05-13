@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 
-Chef Claude\Chef_claud\src\components\Apikey.jsx
+Chef Claude/Chef_claud/src/components/Apikey.jsx
 
 # Editor directories and files
 .vscode/*
