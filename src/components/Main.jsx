@@ -5,12 +5,12 @@ import ClaudeRecipe from "./ClaudeRecipe";
 import IngredientList from "./IngredientList";
 import { useRef } from "react";
 import { useEffect } from "react";
-import Apikey from "./Apikey";
 
 const Main = () => {
   const [ingredients, setIngredients] = useState([]);
   const [recipeDetail, setRecipeDetail] = useState("");
   const resipeSection = useRef(null);
+  const ApiKey = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
     if (recipeDetail !== "" && resipeSection.current !== null) {
@@ -33,7 +33,7 @@ const Main = () => {
 
   const handleRecipe = async () => {
     const inputRecipe = ingredients.join(", ");
-    const hf = new HfInference(Apikey());
+    const hf = new HfInference(ApiKey);
     try {
       const response = await hf.chatCompletion({
         model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
