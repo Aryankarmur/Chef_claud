@@ -1,12 +1,72 @@
-# React + Vite
+# Chef Claud
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chef Claud is a React-based AI recipe assistant that allows users to enter a recipe-related request and receive an AI-generated response. The project was created to practice API integration, asynchronous data handling, and working with AI services in a React application.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Send recipe-related requests to an AI service
+* Generate AI-based recipe responses
+* Markdown-formatted responses
+* Responsive user interface
+* Loading and response handling
+* Interactive React-based UI
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React.js
+* JavaScript
+* Vite
+* Hugging Face Inference
+* Axios
+* React Markdown
+* React Icons
+* CSS
+
+## What I Practiced
+
+* Integrating an AI inference API
+* Making asynchronous API requests
+* Handling API responses in React
+* Managing React component state
+* Rendering Markdown content
+* Building a responsive interface
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Aryankarmur/Chef_claud.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd Chef_claud
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure environment variables
+
+Create a `.env` file and add the required AI API credentials according to the project's implementation.
+
+### 5. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will be available on the local development server provided by Vite.
+
+## Project Purpose
+
+This project was built as a practice project to understand how React applications can communicate with AI services and display generated responses dynamically.
+
+## Repository
+
+[GitHub Repository](https://github.com/Aryankarmur/Chef_claud)
